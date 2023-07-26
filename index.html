@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <style>
+    #map {
+      height: 400px;
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 50px;
+    }
+    h1{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: underline;
+    }
+    #rangeSlider{
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Travel Advisor App</h1>
+  <div>
+    <label for="searchInput">Search:</label>
+    <input type="text" id="searchInput" />
+    <label for="filterSelect" style="margin-left: 10px;">Filter:</label>
+    <select id="filterSelect">
+      <option value="hotels">Hotels</option>
+      <option value="restaurants">Restaurants</option>
+      <option value="attractions">Attractions</option>
+    </select>
+    <input type="range" id="rangeSlider" min="1" max="5" value="1" />
+    <h3 style="margin-left: 30%; margin-top: -10px;"> 1-5km</h3>
+    <div id="dateContainer" style="margin-top: 20px;"></div>
+    <div id="map"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
