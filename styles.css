@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+#map {
+    height: 400px;
+}
+  
+.search-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+  
+#search-input {
+    width: 200px;
+}
+  
+#range-slider {
+    width: 150px;
+    margin-left: 10px;
+}
+  
+#enter-dates-button {
+    display: none;
+}
+  
