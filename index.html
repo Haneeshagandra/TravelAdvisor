@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ... other head elements ... -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <style>
+    /* Add your custom CSS styles here */
+    #map {
+      height: 400px;
+    }
+  </style>
+</head>
+<!-- ... rest of the HTML ... -->
+
+<body>
+  <h1>Travel Advisor App</h1>
+  <div>
+    <label for="searchInput">Search:</label>
+    <input type="text" id="searchInput" />
+    <label for="filterSelect">Filter:</label>
+    <select id="filterSelect">
+      <option value="hotels">Hotels</option>
+      <option value="restaurants">Restaurants</option>
+      <option value="attractions">Attractions</option>
+    </select>
+    <input type="range" id="rangeSlider" min="1" max="5" value="1" />
+    <div id="dateContainer"></div>
+    <div id="map"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
