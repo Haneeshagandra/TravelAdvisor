@@ -76,7 +76,6 @@ document.getElementById('dateContainer').addEventListener('click', function (eve
 // Initial fetch and render on page load
 handleFilterChange();
 
-// ... Rest of the code ...
 
 // Function to handle search input
 function handleSearchInput() {
@@ -106,8 +105,6 @@ function handleSearchInput() {
 // Event listener for search input
 document.getElementById('searchInput').addEventListener('input', handleSearchInput);
 
-// ... Rest of the code ...
-// ... Rest of the code ...
 
 // Initialize the map with center and zoom level
 const map = L.map('map').setView([0, 0], 2);
@@ -132,8 +129,6 @@ function renderMap(places) {
     L.marker([latitude, longitude]).addTo(map).bindPopup(name);
   });
 }
-
-// ... Rest of the code ...
 
 // Function to handle search input
 async function handleSearchInput() {
@@ -176,10 +171,7 @@ async function handleSearchInput() {
 // Event listener for search input
 document.getElementById('searchInput').addEventListener('input', debounce(handleSearchInput, 500));
 
-// ... Rest of the code ...
 
-
-// ... Rest of the code ...
 // Function to add debounce behavior to functions
 function debounce(func, delay) {
   let timer;
